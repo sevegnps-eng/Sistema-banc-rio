@@ -50,9 +50,15 @@ class Conta:
 
 gabriel = Conta("Gabriel", 1000)
 eduardo = Conta("Eduardo", 1000)
+joao = Conta("João", 0)
+
 
 gabriel.depositar(100000)
 gabriel.transferir(43789, eduardo)
+gabriel.transferir(14780, joao)
 
+joao.transferir(2000, eduardo)
+print(eduardo.saldo)
+print(joao.saldo)
 
 
