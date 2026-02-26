@@ -1,3 +1,35 @@
+# Classe Usuário
+
+class Usuario():
+    def __init__(self, email, senha):
+        self.email = email
+        self.senha = senha
+
+# Definir email
+    def definir_email(self, email):
+            
+            if email.startswith("@"):
+                print("Seu email não pode começar com @")
+                return
+            
+            if email.count("@") != 1:
+                print("Seu email deve conter apenas um @ ")
+                return
+            
+            if email.endswith("@"):
+                print("Seu email não pode terminar com @")
+                return
+            
+            if "." not in email:
+                print("seu email precisa ter um .")
+                return
+            
+            if " " in email:
+                print("seu email não pode conter espaços ")
+                return
+            
+            return email
+
 # Criação da Classe conta
 
 class Conta:
@@ -61,4 +93,6 @@ joao.transferir(2000, eduardo)
 print(eduardo.saldo)
 print(joao.saldo)
 
+gabriel = Usuario("@sevegnps@gmail.com", "12312as")
+gabriel.definir_email("sevegnps@gmail.com")
 
