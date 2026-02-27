@@ -1,3 +1,9 @@
+# Import 
+import string
+
+# Banco de dados
+usuarios = []
+
 # Classe Usuário
 
 class Usuario():
@@ -5,30 +11,31 @@ class Usuario():
         self.email = email
         self.senha = senha
 
-# Definir email
-    def definir_email(self, email):
-            
-            if email.startswith("@"):
-                print("Seu email não pode começar com @")
+# Definir senha
+   
+    def criar_senha(self, senha):
+
+        if len(senha) < 12:
+            print ("Sua senha deve ter no mínimo 12 caracteres")
+            return
+    
+        if not any(maiuscula.isupper() for maiuscula in senha):
+                print("Sua senha deve conter no mínimo um caractere maiúsculo")
                 return
-            
-            if email.count("@") != 1:
-                print("Seu email deve conter apenas um @ ")
-                return
-            
-            if email.endswith("@"):
-                print("Seu email não pode terminar com @")
-                return
-            
-            if "." not in email:
-                print("seu email precisa ter um .")
-                return
-            
-            if " " in email:
-                print("seu email não pode conter espaços ")
-                return
-            
-            return email
+        
+        if not any(minuscula.islower() for minuscula in senha):
+            print("Sua senha deve conter no mínimo um caractere minúsculo")
+            return
+        
+        if not any(numero.isdigit() for numero in senha):
+            print("Sua senha deve conter no mínimo um número")
+            return
+        
+        if not any(not simbolo.isalnum() for simbolo in senha):
+            print("Sua senha deve conter símbolos")
+            return
+
+        return senha
 
 # Criação da Classe conta
 
@@ -42,7 +49,6 @@ class Conta:
     def depositar(self, entrada):
         if entrada <= 0:
             print("Valor inválido para depósito!")
-
             return
 
         self.saldo += entrada
@@ -85,6 +91,7 @@ eduardo = Conta("Eduardo", 1000)
 joao = Conta("João", 0)
 
 
+
 gabriel.depositar(100000)
 gabriel.transferir(43789, eduardo)
 gabriel.transferir(14780, joao)
@@ -93,6 +100,7 @@ joao.transferir(2000, eduardo)
 print(eduardo.saldo)
 print(joao.saldo)
 
-gabriel = Usuario("@sevegnps@gmail.com", "12312as")
-gabriel.definir_email("sevegnps@gmail.com")
+gabrieu = Usuario("sevegnps!gmail.com", "1231231")
+gabrieu.criar_senha("26a09b2003F#")
+
 
