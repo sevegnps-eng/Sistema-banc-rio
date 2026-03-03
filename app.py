@@ -2,41 +2,55 @@
 import string
 
 # Banco de dados
+
 usuarios = []
 
 # Classe Usuário
 
 class Usuario():
-    def __init__(self, email, senha):
+    def __init__(self, email, senha, saldo):
+        self.validar_email(email)
+        self.validar_senha(senha)
         self.email = email
         self.senha = senha
 
-# Definir senha
+# Validação email
+
+    def validar_email(self, email):
+
+        if "@" not in email or email.startswith("@") or email.endswith("@"):
+            raise ValueError("Email inválido")
+
+# Validação senha
    
-    def criar_senha(self, senha):
+    def validar_senha(self, senha):
 
         if len(senha) < 12:
             print ("Sua senha deve ter no mínimo 12 caracteres")
-            return
     
-        if not any(maiuscula.isupper() for maiuscula in senha):
-                print("Sua senha deve conter no mínimo um caractere maiúsculo")
-                return
+        elif not any(maiuscula.isupper() for maiuscula in senha):
+            print("Sua senha deve conter no mínimo um caractere maiúsculo")
         
-        if not any(minuscula.islower() for minuscula in senha):
+        elif not any(minuscula.islower() for minuscula in senha):
             print("Sua senha deve conter no mínimo um caractere minúsculo")
-            return
         
-        if not any(numero.isdigit() for numero in senha):
+        elif not any(numero.isdigit() for numero in senha):
             print("Sua senha deve conter no mínimo um número")
-            return
         
-        if not any(not simbolo.isalnum() for simbolo in senha):
+        elif not any(not simbolo.isalnum() for simbolo in senha):
             print("Sua senha deve conter símbolos")
-            return
+
+            print("Senha validada com sucesso! ")
 
         return senha
+            
+# Cadastro do usuário:
 
+def cadastrar_usuario(self):
+    
+    usuarios.append({
+        "Email": usuarios
+    })
 # Criação da Classe conta
 
 class Conta:
@@ -83,24 +97,10 @@ class Conta:
         outra_conta.saldo += transferencia
 
         print(f"Você transferiu R${transferencia:.2f} para {outra_conta.titular} e seu saldo agora é de R${self.saldo}")
-    
 
+# Programa principal
 
-gabriel = Conta("Gabriel", 1000)
-eduardo = Conta("Eduardo", 1000)
-joao = Conta("João", 0)
-
-
-
-gabriel.depositar(100000)
-gabriel.transferir(43789, eduardo)
-gabriel.transferir(14780, joao)
-
-joao.transferir(2000, eduardo)
-print(eduardo.saldo)
-print(joao.saldo)
-
-gabrieu = Usuario("sevegnps!gmail.com", "1231231")
-gabrieu.criar_senha("26a09b2003F#")
+gabriel = Usuario("sevegnps@gmail.com", "26a09b2003F#")
+print(usuarios)
 
 
