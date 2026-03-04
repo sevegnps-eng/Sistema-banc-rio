@@ -1,6 +1,3 @@
-# Import 
-import string
-
 # Banco de dados
 
 usuarios = []
@@ -8,7 +5,7 @@ usuarios = []
 # Classe Usuário
 
 class Usuario():
-    def __init__(self, email, senha, saldo):
+    def __init__(self, email, senha):
         self.validar_email(email)
         self.validar_senha(senha)
         self.email = email
@@ -26,31 +23,23 @@ class Usuario():
     def validar_senha(self, senha):
 
         if len(senha) < 12:
-            print ("Sua senha deve ter no mínimo 12 caracteres")
+            raise ValueError("Sua senha deve ter no mínimo 12 caracteres")
     
         elif not any(maiuscula.isupper() for maiuscula in senha):
-            print("Sua senha deve conter no mínimo um caractere maiúsculo")
+            raise ValueError("Sua senha deve conter no mínimo um caractere maiúsculo")
         
         elif not any(minuscula.islower() for minuscula in senha):
-            print("Sua senha deve conter no mínimo um caractere minúsculo")
+            raise ValueError("Sua senha deve conter no mínimo um caractere minúsculo")
         
         elif not any(numero.isdigit() for numero in senha):
-            print("Sua senha deve conter no mínimo um número")
+            raise ValueError("Sua senha deve conter no mínimo um número")
         
         elif not any(not simbolo.isalnum() for simbolo in senha):
-            print("Sua senha deve conter símbolos")
-
-            print("Senha validada com sucesso! ")
-
-        return senha
+            raise ValueError("Sua senha deve conter símbolos")
             
 # Cadastro do usuário:
 
-def cadastrar_usuario(self):
-    
-    usuarios.append({
-        "Email": usuarios
-    })
+
 # Criação da Classe conta
 
 class Conta:
@@ -102,5 +91,4 @@ class Conta:
 
 gabriel = Usuario("sevegnps@gmail.com", "26a09b2003F#")
 print(usuarios)
-
 
