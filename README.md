@@ -9,4 +9,5 @@ _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe 
 ### Melhorias para o projeto:
 
 **1** - Adicionar mais classes para separar cada objeto e tornar mais profissional
+
 __2__ - Criar sistema de autenticação com cadastro e login
