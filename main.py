@@ -59,9 +59,9 @@ class Conta():
             print (historico)
 
 
-gabriel_usuario = Usuario("Gabriel Sevegnani", "053.680.100-28", "26a09b2003F#")
+gabriel_usuario = Usuario("Gabriel Sevegnani", "053.680.100-28", "123asd7120B#")
 gabriel_conta = Conta("537", gabriel_usuario)
-juliana_usuario = Usuario("Juliana Braga", "123.412.123-23", "01dcj3gfo4spS#")
+juliana_usuario = Usuario("Juliana Braga", "123.412.123-23", "123127ufshU#")
 juliana_conta = Conta("123", juliana_usuario)
 juliana_conta.depositar(1000)
 juliana_conta.sacar(100)
