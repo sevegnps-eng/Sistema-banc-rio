@@ -8,6 +8,7 @@ class Usuario():
         self.nome = nome
         self.cpf = cpf
         self.validar_senha(senha)
+        self.hash_senha = bcrypt.hashpw(senha.encode("utf-8"), bcrypt.gensalt())
 
     def validar_senha(self, senha):
 
