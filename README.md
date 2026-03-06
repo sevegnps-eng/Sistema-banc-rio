@@ -1,7 +1,12 @@
 # Projeto de Sistema Bancário pessoal
 
-Projeto pessoal da criação de um sistema bancário básico em Python, a finalidade deste projeto é apenas para aplicar estudos e e funcionalidades aprendidas.
+_Projeto pessoal da criação de um sistema bancário básico em Python, a finalidade deste projeto é apenas para aplicar estudos e e funcionalidades aprendidas._
 
 ## Funcionalidades
 
-Banco de usuários com a senha do mesmos criptografadas por bcrypt, classe do sistema bancário para transações dos usuários.
+**Banco de usuários com a senha do mesmos criptografadas por bcrypt, classe do sistema bancário para transações dos usuários.**
+
+### Melhorias para o projeto:
+
+1 - Adicionar mais classes para separar cada objeto e tornar mais profissional
+2 - Criar sistema de autenticação com cadastro e login
