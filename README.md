@@ -6,8 +6,12 @@ _Projeto pessoal da criação de um sistema bancário básico em Python, a final
 
 _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe do sistema bancário para transações dos usuários._
 
-### Melhorias para o projeto:
+### Melhorias para o projeto
 
-**1** - Adicionar mais classes para separar cada objeto e tornar mais profissional
+* Adicionar mais classes para separar cada objeto e tornar mais profissional
+* Criar sistema de autenticação com cadastro e login
 
-__2__ - Criar sistema de autenticação com cadastro e login
+### Linguagens do Projeto
+
+* Python
+* PostgreSQL
