@@ -4,7 +4,7 @@ _Projeto pessoal da criação de um sistema bancário básico em Python, a final
 
 ## Funcionalidades
 
-**Banco de usuários com a senha do mesmos criptografadas por bcrypt, classe do sistema bancário para transações dos usuários.**
+_Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe do sistema bancário para transações dos usuários._
 
 ### Melhorias para o projeto:
 
