@@ -19,3 +19,8 @@ _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe 
 
 * Python
 * PostgreSQL
+
+
+#### Imagem local
+
+![Logo do python](img/Python.png)
