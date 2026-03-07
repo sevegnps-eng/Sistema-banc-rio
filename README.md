@@ -34,3 +34,5 @@ _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe 
 [Google](https://www.google.com)
 
 https://github.com
+
+[![Logo Python](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png)](https://github.com)
