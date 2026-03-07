@@ -9,6 +9,7 @@ _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe 
 ### Melhorias para o projeto
 
 **1. Criar sistema de autenticação com cadastro e login**
+
     1. Sistema de cadastro com informações pessoais, email, cpf, endereço, etc...
     2. Sistema de login com cpf e senha
 **2. Adicionar mais classes para separar cada objeto e tornar mais profissional**
