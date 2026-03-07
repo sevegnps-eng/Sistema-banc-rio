@@ -31,7 +31,7 @@ def somar(n1, n2)
 
 - [x] classe Usuários 
 - [x] classe Banco
-- [] classe Banco de usuários 
+- [ ] classe Banco de usuários 
 
 #### Imagem local
 
