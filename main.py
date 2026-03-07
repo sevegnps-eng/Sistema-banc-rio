@@ -30,6 +30,9 @@ class Conta():
         self.usuario = usuario
         self.saldo = 0
         self.historico = []
+
+    def ver_saldo(self):
+        print(f"Olá {self.usuario.nome}, seu saldo atual é de R${self.saldo:.2f}")
   
     def depositar(self, valor):
         if valor <= 0:
@@ -38,10 +41,10 @@ class Conta():
         self.historico.append(f"Você depositou R${valor:.2f}")
 
     def sacar(self, valor):
-        if valor > self.saldo:
-            raise ValueError("Saldo insuficiente")
         if valor <= 0:
             raise ValueError("Valor inválido para saque")
+        if valor > self.saldo:
+            raise ValueError("Saldo insuficiente")
         self.saldo -= valor
         self.historico.append(f"Você sacou R${valor:.2f}")
 
@@ -66,6 +69,10 @@ juliana_conta = Conta("123", juliana_usuario)
 juliana_conta.depositar(1000)
 juliana_conta.sacar(100)
 juliana_conta.transferir(200, gabriel_conta)
+
+
+
+    
 
 
 
