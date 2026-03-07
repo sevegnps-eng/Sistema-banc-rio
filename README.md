@@ -24,3 +24,7 @@ _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe 
 #### Imagem local
 
 ![Logo do python](img/Python.png)
+
+#### Imagem externa
+
+![Logo python](https://pt.wikipedia.org/wiki/Ficheiro:Python_logo_and_wordmark.svg)
