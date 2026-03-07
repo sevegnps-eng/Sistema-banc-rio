@@ -27,6 +27,11 @@ def somar(n1, n2)
     return n1 + n2
 ```
 
+#### Lista de tarefas a fazer
+
+- [x] classe Usuários 
+- [x] classe Banco
+- [] classe Banco de usuários 
 
 #### Imagem local
 
