@@ -18,14 +18,6 @@ _Banco de usuários com a senha do mesmos criptografadas por **bcrypt**, classe 
 ### Linguagens do Projeto
 
 * Python
-* PostgreSQL
-
-### Código da função soma
-
-```Python
-def somar(n1, n2)
-    return n1 + n2
-```
 
 #### Lista de tarefas a fazer
 
@@ -33,19 +25,5 @@ def somar(n1, n2)
 - [x] classe Banco
 - [ ] classe Banco de usuários 
 
-#### Imagem local
 
-![Logo do python](img/Python.png)
-
-#### Imagem externa
-
-![Logo python](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png)
-
-#### Links
-
-[Google](https://www.google.com)
-
-https://github.com
-
-[![Logo Python](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png)](https://github.com)
 
