@@ -7,9 +7,11 @@ class Usuario():
     def __init__(self, nome, cpf, senha):
         self.nome = nome
         self.cpf = cpf
+        self.contas = []
         self.validar_senha(senha)
         self.hash_senha = bcrypt.hashpw(senha.encode("utf-8"), bcrypt.gensalt())
 
+# Validar senha
     def validar_senha(self, senha):
 
         if len(senha) < 12:
@@ -61,6 +63,16 @@ class Conta():
         for historico in self.historico:
             print (historico)
 
+# Classe Conta Corrente
+class Conta_corrente(Conta):
+    def __init__(self, numero_conta, usuario, limite, taxa_manutencao):
+        super.__init__(numero_conta, usuario)
+        self.limite = limite
+        self.taxa_manutencao = taxa_manutencao
+
+    def sacar(self):
+        
+        
 
 gabriel_usuario = Usuario("Gabriel Sevegnani", "053.680.100-28", "123asd7120B#")
 gabriel_conta = Conta("537", gabriel_usuario)
